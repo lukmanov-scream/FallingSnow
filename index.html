@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Falling Snow</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="timer">
+            <div class="timer__items">
+                <div class="timer__item timer__days">00</div>
+                <div class="timer__item timer__hours">00</div>
+                <div class="timer__item timer__minutes">00</div>
+                <div class="timer__item timer__seconds">00</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script src="js/snowfall.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).snowfall({
+                image: "img/snow.png",
+                flakeCount: 120,
+                minSize: 10,
+                maxSize: 20,
+                round: true,
+                shadow: false,
+            });
+        });
+    </script>
+    <!-- 
+flakeCount - количество снежинок на странице (одновременно)
+flakeColor - цвет снежинок
+minSize - минимальный размер снежинки
+maxSize - максимальный размер снежинки
+maxSpeed - максимальная скорость
+minSpeed - минимальная скорость
+round - округление снежинок (значение true или false)
+shadow - тень снежинок (значение true или false) 
+-->
+</body>
+
+</html>
