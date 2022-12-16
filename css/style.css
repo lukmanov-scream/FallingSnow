@@ -5,9 +5,20 @@
   font-family: Sans-serif, Verdana, Geneva, Tahoma;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  opacity: 0; 
+  overflow-x: hidden; 
   background-image: linear-gradient(to bottom, #0d122c, #0f1736, #111c40, #14204b, #162556, #17285d, #182c63, #192f6a, #19326e, #193572, #183876, #183b7a);
 }
 
